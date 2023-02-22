@@ -29,4 +29,7 @@ repositories { // repositories 는 각종 의존성(라이브러리)들을 어�
 dependencies { // 프로젝트 개발에 필요한 의존성들을 선언하는 곳이다.
     implementation('org.springframework.boot:spring-boot-starter-web') // 버전을 명시하지 않아야 맨 위에 작성한 springbootVersion 을 따라간다.
     implementation('org.springframework.boot:spring-boot-starter-test')
+
+    compileOnly('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
 }
